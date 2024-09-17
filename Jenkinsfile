@@ -10,7 +10,7 @@ pipeline {
                     echo "Fetching code from ${params.BRANCH_NAME} branch"
                     checkout([$class: 'GitSCM',
                         branches: [[name: "*/${params.BRANCH_NAME}"]],
-                        userRemoteConfigs: [[url: 'https://github.com/your-repo-url.git']]
+                        userRemoteConfigs: [[url: 'https://github.com/HemanthYadav70/uat.git']]
                     ])
                 }
             }
